@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: sans-serif;
+    /*font: inherit;*/
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*--------------------
+    END OF RESET
+--------------------*/
+
+header,
+footer {
+    position: relative;
+    width: 100%;
+    background: #F0F0F0;
+}
+
+.franja-oscura {
+    background: #484545;
+    width: 100%;
+    height: 40px;
+}
+
+.contenedor {
+    position: relative;
+    width: 920px;
+    height: 135px;
+    margin: 0 auto;
+}
+
+.izquierda {
+    float: left;
+    margin-top: 10px;
+}
+
+.derecha {
+    float: right;
+    margin-top: 10px;
+}
+
+.izquierda img {
+    float: left;
+}
+h1 {
+    float: right;
+    margin: 45px 0 0 10px;
+}
+
+.nombre-de-empresa {
+    text-transform: uppercase;
+}
+
+header nav{
+
+    /*float: right;
+    margin-top: 95px;*/
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+}
+
+#current,
+nav li:hover {
+    color: #F0F0F0;
+    background: #484545;
+    padding-top: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: inherit;
+} 
+
+section {
+    width: 920px;
+    margin: 0 auto;
+}
+
+footer {
+    font-size: 0.7em;
+}
+
+footer .contenedor {
+    padding-top: 87px;
+}
+
+/*
+===========================================
+              Contact form
+===========================================
+*/
+
+form#contact-form {
+    width:470px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+form#contact-form label {
+    font-size: 0.8em;
+}
+
+form#contact-form input {
+    margin: 10px 0;
+    display: block;
+}
+
+form#contact-form input[type="text"] {
+    width: 250px;
+}
+
+form#contact-form textarea {
+    margin: 10px 0;
+    display: block;
+    width: 350px;
+    height: 100px;
+    max-width: 450px;
+}
+
+form#contact-form input[type="submit"] {
+    display: block;
+}
+
+form#contact-form .msj-requerido {
+    font-size: 0.7em;
+    font-style: italic;
+    visibility: hidden;
+    color: #FF0000;
+    float: right;
+}
+
+form#contact-form .requerido-fail {
+    border: 1px solid #FF0000;
+}
+
+/*
+===========================================
+                Log in
+===========================================
+*/
+
+.login {
+    display: inline;
+    position: absolute;
+    background: #484545;
+    color: #F0F0F0;
+    top: 0;
+    right:0;
+    /*padding: 25px;*/
+}
+
+.login a {
+    display: block;
+    text-decoration: none;
+    padding: 0 25px 25px 25px;
+    color: inherit;
+}
+
+/*
+===========================================
+                Organigrama
+===========================================
+*/
+
+span#DataBoundOrganisationChart1 table div a {
+    display: none;
+}
+
+.organigrama {
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}

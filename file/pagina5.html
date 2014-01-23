@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina 5 | Contacto</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">  
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <!--<script type="text/javascript" src="../js/src.js"></script>-->
+</head>
+<body>
+
+    <header>
+        <div class="franja-oscura"></div>
+        <div class="contenedor">
+            <div class="izquierda">
+                <img src="../images/logo.jpg">
+                <h1 class="nombre-de-empresa">Lorem Ipsum</h1>  
+            </div>  
+            <div class="login">
+                <a href="catalogo/index.html">Iniciar sesi&oacute;n</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.aspx">Pagina 1</a></li>
+                    <li><a href="pagina2.html">Pagina 2</a></li>
+                    <li><a href="pagina3.html">Pagina 3</a></li>
+                    <li><a href="pagina4.html">Pagina 4</a></li>
+                    <li><a href="../memberPages/organigrama.aspx">Organigrama</a></li>
+                    <li id="current"><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <form id="contact-form" method="post" name="contact_form" action="sendEmail.asp">
+            <label for='name'>Nombre:</label> <br>
+            <input type="text" name="nombre" placeholder="Nombre" class="requerido"></input>
+
+            <label for='email'>Correo Electr&oacute;nico:</label> <br>
+            <input type="text" name="email" placeholder="Correo electr&oacute;nico" class="requerido email"></input>
+
+            <label for='asunto'>Asunto:</label> <br>
+            <input type="text" name="asunto" placeholder="Asunto"></input>
+
+            <label for='mensaje'>Mensaje:</label> <br>
+            <textarea name="mensaje" placeholder="Mensaje" class="requerido"></textarea>
+
+            <input type="submit" class="submit"></button>
+            <span class="msj-requerido">Campo reqerido</span>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <span  class="nombre-de-empresa izquierda">Lorem Ipsum</span>
+            <span class="derecha">Sed ut perspiciatis unde omnis iste natus</span>
+        </div>
+    </footer>
+</body>
+</html>
