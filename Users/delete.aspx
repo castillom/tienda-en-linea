@@ -1,16 +1,6 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="delete.aspx.vb" Inherits="Users_delete" %>
+﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="delete.aspx.vb" Inherits="users_delete" title="Untitled Page" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
-</body>
-</html>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Label ID="lblUserNumber" runat="server"></asp:Label><br />
+<asp:Button ID="btnDelete" runat="server" Text="Borrar" />
+</asp:Content>

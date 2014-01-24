@@ -1,16 +1,41 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="modify.aspx.vb" Inherits="Users_modify" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
+﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="modify.aspx.vb" Inherits="users_modify" title="Untitled Page" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<table border="0">
+    <tr>
+        <td style="width: 100px">
+            <asp:Label ID="Label1" runat="server" Text="Nombre Usuario:"></asp:Label>
+        </td>
+        <td style="width: 141px">
+            <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUserName"
+            ErrorMessage="Nombre de usuario requerido.">*</asp:RequiredFieldValidator>
+        </td>
+        
+    </tr>
+    <tr>
+        <td style="width: 100px">
+            <asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label>
+        </td>
+        <td style="width: 141px">
+            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword"
+            ErrorMessage="Password requerido.">*</asp:RequiredFieldValidator>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 100px">
+            <asp:Label ID="Label7" runat="server" Text="Activo:"></asp:Label>
+        </td>
+        <td style="width: 141px">
+            <asp:CheckBox ID="chkActive" runat="server" />
+        </td>
+    </tr>
     
-    </div>
-    </form>
-</body>
-</html>
+</table>
+<asp:ValidationSummary ID="ValidationSummary1" runat="server" HeaderText="Tienes que poner un valor en los siguientes campos:"
+ShowMessageBox="False" ShowSummary="true" />
+<br />
+<asp:Label ID="lblMessages" runat="server"></asp:Label>
+&nbsp;
+&nbsp; &nbsp;&nbsp;
+</asp:Content>

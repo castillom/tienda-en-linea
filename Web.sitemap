@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-    <siteMapNode url="" title=""  description="">
-        <siteMapNode url="" title=""  description="" />
-        <siteMapNode url="" title=""  description="" />
-    </siteMapNode>
+<siteMap>
+  <siteMapNode title="Principal" description="Principal" url="~/users/profile.aspx">
+  </siteMapNode>
 </siteMap>
+
